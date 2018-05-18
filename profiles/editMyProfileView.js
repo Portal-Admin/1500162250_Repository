@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function(){
       //console.log("newCell2=" + newCell2);
       newCell2.colSpan=2;
       newCell2.setAttribute("style", "color:red; font-weight;bold;");
-      var newText2 = document.createTextNode('ここに追加のメッセージを入れる。例えば、クレジットカード情報を含めないで下さい等。。');
+      var newText2 = document.createTextNode('追加のメッセージを入れる。例えば、クレジットカード情報を含めないで下さい等。。');
       newCell2.appendChild(newText2);
     }
 

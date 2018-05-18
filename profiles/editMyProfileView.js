@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function(){
       var newCell3  = newTableRow3.insertCell(0);
       //console.log("newCell3=" + newCell3);
       newCell3.setAttribute("style", "color:red; font-weight;bold;");
-      var newText3 = document.createTextNode('ここに追加のメッセージを入れる。例えば、クレジットカード情報を含めないで下さい等。。');
+      var newText3 = document.createTextNode('追加のメッセージを入れる。例えば、クレジットカード情報を含めないで下さい等。。');
       newCell3.appendChild(newText3);
     }
   }

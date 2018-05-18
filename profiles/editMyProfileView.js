@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function(){
       var newCell3  = newTableRow3.insertCell(0);
       //console.log("newCell3=" + newCell3);
       newCell3.setAttribute("style", "color:red; font-weight;bold;");
-      var newText3 = document.createTextNode('ここに追加のメッセージを入れる。例えば、クレジットカード情報を含めないで下さい等。。');
+      var newText3 = document.createTextNode('当ポータルサイトに提供されるすべての個人情報は、以下の利用目的の範囲内で利用するものとします。<br>・業務に関連する人や専門家を、組織や従来の枠組みを越えて探し、業務のスピードアップや効率アップにつなげる<br>・従業員個人のスキルやノウハウを探し、問題解決や課題達成のスピードアップおよび新価値の創造につなげる<br>・従業員個人の知識・知見・ノウハウ等を可視化し、共有する<br>・従業員間のコミュニケーションを活性化する');
       newCell3.appendChild(newText3);
     }
   }

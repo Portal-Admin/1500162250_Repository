@@ -28,6 +28,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
 
 		msgDiv.innerHTML += msg;
+		msgDiv.style.display ="block";
 	}
 });
 			  

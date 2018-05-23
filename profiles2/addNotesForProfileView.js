@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function(){
         //if (regexp.test(document.URL)) {
         var res = document.evaluate('//div[@class="lotusTabContainer"]', document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null);
         //console.log("res.snapshotLength=" + res.snapshotLength);
-        if (res.snapshotLength==1) {
+        //if (res.snapshotLength==1) {
             var node = res.snapshotItem(0);
             if (document.getElementById("yi201805211340") == null) {
                 var newDivNode = document.createElement("div");
@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function(){
                 newDivNode.appendChild(newUlNode);
                 node.parentElement.insertBefore(newDivNode, node);
             }
-        }
+        //}
         //}
     }
     else {

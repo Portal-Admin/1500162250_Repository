@@ -6,7 +6,7 @@
 
 document.addEventListener('DOMContentLoaded', function(){
 
-    var noteMain_en = "(Draft)<br>All personal information provided to this Global Portal shall be used for the following purpose.";
+    var noteMain_en = "All personal information provided to this Global Portal shall be used for the following purpose.";
     var noteLi1_en  = "To search for the right associate and experts up to business activity beyond the scope of organizations and conservative frameworks contributes to accelerate our business process, to improve its efficiency.";
     var noteLi2_en  = "To search for individual abilities and KNOW-HOW contributes to accelerate our problem solving and challenge achievements, to create new values.";
     var noteLi3_en  = "To visualize and share individual knowledge and KNOW-HOW.";
@@ -39,6 +39,14 @@ document.addEventListener('DOMContentLoaded', function(){
         var newDivNode = document.createElement("div");
         newDivNode.setAttribute("id", "yi201805211344");
         newDivNode.setAttribute("style", "padding: 0.5em 1em; margin: 2em 0; font-weight: bold; color: #36393c; background: #def1fa; border: solid 2px #4cb0d7; border-radius: 5px;");
+
+        if (document.documentElement.lang != "ja") {
+            var newTextNodeDraft = document.createTextNode("(Draft)");
+            newDivNode.appendChild(newTextNodeDraft);
+            var newBRNode = document.createElement("br");
+            newDivNode.appendChild(newBRNode);
+        }
+
         var newTextNode = document.createTextNode(noteMain);
         newDivNode.appendChild(newTextNode);
         var newUlNode = document.createElement("ul");
